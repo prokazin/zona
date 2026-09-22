@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Тюряга</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="topbar-title">ТЮРЯГА</div>
+    <div class="topbar-sub">Зона ждёт</div>
+  </header>
+
+  <div id="msg-ok" class="msg msg-ok hidden"></div>
+  <div id="msg-err" class="msg msg-err hidden"></div>
+
+  <div id="timer-box" class="timer-box hidden">
+    <div class="timer-label">В ДЕЛЕ</div>
+    <div id="timer-name" class="timer-name">—</div>
+    <div id="timer-value" class="timer-value">00:00</div>
+  </div>
+
+  <section class="card">
+    <div class="card-header">Персонаж</div>
+
+    <div class="char-row">
+      <div id="avatar" class="avatar">З</div>
+      <div class="char-info">
+        <div id="char-name" class="char-name">Заключённый</div>
+        <div id="char-rank" class="char-rank">Шестёрка</div>
+      </div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-line">
+        <span>Энергия</span>
+        <span id="energy-val">100 / 100</span>
+      </div>
+      <div class="bar"><div id="energy-bar" class="bar-in bar-energy"></div></div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-line">
+        <span>Авторитет</span>
+        <span id="auth-val">0</span>
+      </div>
+      <div class="bar"><div id="auth-bar" class="bar-in bar-auth"></div></div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-line">
+        <span>Папиросы</span>
+        <span id="pap-val">0</span>
+      </div>
+      <div class="bar"><div id="pap-bar" class="bar-in bar-pap"></div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-header">Движухи</div>
+    <div id="moves"></div>
+  </section>
+
+  <div class="bottom">
+    <button id="reset" class="btn btn-red">Сбросить</button>
+  </div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/state.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
