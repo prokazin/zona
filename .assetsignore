@@ -1,0 +1,11 @@
+.git
+.gitignore
+.wrangler
+.node_modules
+node_modules
+wrangler.jsonc
+README.md
+*.md
+.DS_Store
+.idea
+.vscode
